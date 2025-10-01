@@ -448,7 +448,8 @@ header {
     justify-content: space-between;
     align-items: center;          
     text-align: left;
-    margin-top: 40px;              
+    margin-top: 40px;     
+    font-size: 8px;         
   }
 
   .footer-bottom .footer-socials a {
