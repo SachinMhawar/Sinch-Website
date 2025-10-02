@@ -265,6 +265,8 @@ header {
 .footer-logo .logo {
   width: 120px;
   height: auto;
+    margin-right: -20px;
+
 }
 
 .footer-logo .tagline {
@@ -329,7 +331,7 @@ header {
 
 /* ===== RESPONSIVE (Mobile 768px) ===== */
 @media (max-width: 768px) {
-  
+
   header {
     width: 100%;
     display: flex;
@@ -396,6 +398,34 @@ header {
     gap: 30px;
     margin-top: 50px;
   }
+
+
+  .footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Footer logo */
+.footer-logo {
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.footer-logo .logo {
+  width: 106px;
+  height: auto;
+  margin-left: -1px;
+
+}
+
+.footer-logo .tagline {
+  font-size: 14px;
+  letter-spacing: 3px;
+  margin-top: 8px;
+  color: #ffffff;
+}
+
+
 
   .footer-bottom {
     flex-direction: row;
