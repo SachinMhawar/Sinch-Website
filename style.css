@@ -224,7 +224,7 @@ header {
   margin-top: 1rem;
   margin-bottom: 20px;
   line-height: 1.6;
-  color: #0E2138;
+  color: #0e2138;
 }
 
 /* Card button */
@@ -329,14 +329,26 @@ header {
 
 /* ===== RESPONSIVE (Mobile 768px) ===== */
 @media (max-width: 768px) {
+  
   header {
-    padding: 10px 20px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #fff;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: -28px;
   }
 
   .logo img {
-    height: 50px;
-    width: auto;
+    height: 33px;
+    left: -20px;
   }
 
   .dot-menu {
