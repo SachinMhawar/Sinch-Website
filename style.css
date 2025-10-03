@@ -127,7 +127,8 @@ header {
 }
 
 .hero button:hover {
-  background: #e09c00;
+  background: #04998B;
+  color: #fff;
 }
 
 .dots {
@@ -157,82 +158,7 @@ header {
   color: #fff;
 }
 
-/* ===== ABOUT SECTION INSIDE APPLICATION ===== */
-.about-section {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px 20px 60px;
-  text-align: center;
-}
-
-.about-section .icon {
-  width: 60px;
-  height: auto;
-  opacity: 0.2;
-  margin: 0 auto 20px;
-}
-
-.about-section h2 {
-  font-size: 36px;
-  font-weight: 150px;
-  margin-bottom: 20px;
-  color: #0e2138;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-}
-
-.about-section h2 span img {
-  height: 32px;
-  margin-bottom: 0.5rem;
-  vertical-align: middle;
-}
-
-.about-section p {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #0e2138;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.card {
-  width: 100%;
-  background: #04998b4a;
-  border-radius: 20px;
-  padding: 30px 40px;
-  text-align: left;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  margin: 20px auto;
-  transition: transform 0.3s;
-  margin-bottom: 5rem;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  margin-bottom: 25px;
-  color: #000;
-}
-
-.card-logo img {
-  width: 200px;
-  height: auto;
-}
-
-.card p {
-  font-size: 16px;
-  color: #0e2138;
-  line-height: 1.6;
-}
-
+/* Real World Applications Section  */
 .custom-card {
   display: flex;
   align-items: center;
@@ -254,6 +180,92 @@ header {
   color: #0e2138;
   line-height: 1.6;
   margin-bottom: 5rem;
+}
+
+#newCardImg {
+  width: 35%;
+  height: auto;
+  top: -90px;
+}
+
+.application-section .card-logo h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 35px;
+  font-weight: 600;
+  font-weight: bold;
+}
+
+.application-section .card-logo h2 span img {
+  width: 93px;
+  height: 30px;
+  top: 1px;
+}
+
+.card {
+  width: 100%;
+  height: 10%;
+  background: #f1f1f1;
+  border-radius: 20px;
+  padding: 30px 40px;
+  text-align: left;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  transition: transform 0.3s;
+  margin-bottom: 5rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-logo img {
+  width: 120px;
+  height: auto;
+  position: relative;
+  top: -55px;
+}
+
+.card-logo h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #0e2138;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.card p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #0e2138;
+  line-height: 1.6;
+}
+
+.btn-globle {
+  background: #fbbf24;
+  color: #111;
+  font-weight: bold;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-left: 42rem;
+}
+
+.btn:hover {
+  background: #f59e0b;
 }
 
 /* ===== CARDS GRID ===== */
@@ -477,8 +489,10 @@ header {
   margin: 0;
 }
 
-/* ===== RESPONSIVE (Mobile 768px) ===== */
+/* ===== MEDIA QUERY: TABLET / MOBILE ===== */
 @media (max-width: 768px) {
+
+  /* ===== HEADER ===== */
   header {
     width: 100%;
     display: flex;
@@ -507,6 +521,7 @@ header {
     gap: 4px;
   }
 
+  /* ===== HERO ===== */
   .hero {
     height: 60vh;
     width: 100%;
@@ -540,64 +555,27 @@ header {
     font-size: 16px;
   }
 
-  .application-section {
-    padding: 60px 20px;
+  .hero button:hover {
+  background: #04998B;
+}
+
+  .dots {
+    margin-top: 10px;
   }
 
-  .about-section {
-    padding: 30px 15px 40px;
+  .dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #555;
+    border-radius: 50%;
   }
 
-  .about-section .icon {
-    width: 73px;
-    height: 39px;
-    margin-bottom: 15px;
+  .dot.active {
+    background: #fff;
   }
 
-  .about-section h2 {
-    font-size: 46px;
-    gap: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-  }
-
-  .about-section h2 span img {
-    width: 115px;
-    height: 37px;
-    margin-bottom: 0.7rem;
-    vertical-align: middle;
-  }
-
-  .about-section p {
-    font-size: 15px;
-    max-width: 90%;
-    margin: 0 auto;
-  }
-
-  .card {
-    padding: 45px;
-    margin-bottom: 4rem;
-  }
-
-  .card-logo {
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-
-  .card-logo img {
-    width: 211px;
-    height: 132px;
-  }
-
-  .card p {
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 1.3;
-    color: #0e2138;
-  }
-
+  /* ===== APPLICATION SECTION ===== */
   .custom-card {
     margin: 30px auto;
     padding: 0 15px;
@@ -619,6 +597,52 @@ header {
     text-align: center;
   }
 
+  #newCardImg {
+    width: 120%;
+    top: -65px;
+  }
+
+  .card-logo img {
+    width: 85px;
+    height: auto;
+    top: -60px;
+  }
+
+  .application-section .card-logo h2 {
+    font-size: 33px;
+    font-weight: 5800;
+  }
+
+  .application-section .card-logo h2 span img {
+    width: 95px;
+    height: auto;
+  }
+
+  .application-section .card p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .application-section .card .btn-globle {
+    width: 166px;
+    height: 28px;
+    border-radius: 28px;
+    font-size: 16px;
+    margin: 0 auto 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffbe3c;
+    color: #0e2138;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+  }
+
+  /* Grid cards */
   .application-section .cards {
     grid-template-columns: 1fr;
     gap: 45px;
@@ -660,7 +684,6 @@ header {
     line-height: 100%;
   }
 
-  /* Card button */
   .btn {
     width: 166px;
     height: 28px;
@@ -740,6 +763,8 @@ header {
     line-height: 100%;
     color: #0e2138;
   }
+
+  /* ===== FOOTER ===== */
 
   .footer-content {
     max-width: 1000px;
