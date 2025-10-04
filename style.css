@@ -243,17 +243,23 @@ header {
   text-align: center;
 }
 
+/* Desktop view (default) */
 .card p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;  
   font-size: 16px;
   color: #0e2138;
-  line-height: 1.6;
+  line-height: 1.6;        
+  margin: 10px auto;       
+  max-width: 350px;        
+  word-wrap: break-word;  
+  display: block;         
 }
 
+
+
+
 .btn-globle {
-  display: block;            /* make it block so margin auto works */
+  display: block;            
   background: #fbbf24;
   color: #111;
   font-weight: bold;
@@ -803,7 +809,6 @@ header {
     font-size: 18px;
   }
 }
-
 /* ====== BUTTON TO OPEN POPUP ====== */
 .open-popup-btn {
   background: #009688;
@@ -815,7 +820,6 @@ header {
   cursor: pointer;
   margin-top: 70px;
   margin-bottom: 4rem;
-
   transition: background 0.3s ease;
 }
 
@@ -871,7 +875,6 @@ header {
   font-weight: 700;
   color: #001f33;
   margin-bottom: 8px;
-  left: 0;
   display: inline-block;
 }
 
@@ -910,26 +913,33 @@ header {
   margin-bottom: 20px;
   color: #333;
   outline: none;
+  box-sizing: border-box;
 }
 
 /* ====== MOBILE FIELD WITH FLAG ====== */
 .mobile-input {
   display: flex;
-  align-items: center;
+  align-items: center;       
   background: #e9e9e9;
   border-radius: 30px;
-  padding: 8px;
+  padding: 0 12px;          
+  gap: 8px;
+  height: 40px;              
+  box-sizing: border-box;
 }
 
 .mobile-input img {
   width: 24px;
-  height: auto;
+  height: 24px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .mobile-input span {
   font-weight: 600;
   color: #555;
-  margin-right: 6px;
+  display: flex;
+  align-items: center;      
 }
 
 .mobile-input input {
@@ -938,7 +948,67 @@ header {
   border: none;
   font-size: 15px;
   outline: none;
+  color: #333;
+  height: 100%;             
+  padding: 0;
+  box-sizing: border-box;
 }
+.mobile-input {
+  display: flex;
+  align-items: center;       
+  background: #e9e9e9;
+  border-radius: 30px;
+  padding: 0 12px;           
+  gap: 8px;
+  height: 40px;               
+  box-sizing: border-box;
+}
+
+.mobile-input img {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.mobile-input span {
+  font-weight: 600;
+  color: #555;
+  display: flex;
+  align-items: center;      
+}
+
+.mobile-input input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  outline: none;
+  color: #333;
+  height: 100%;              
+  line-height: 40px;        
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+/* Remove number arrows */
+.mobile-input input::-webkit-outer-spin-button,
+.mobile-input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+/* Remove number arrows */
+.mobile-input input::-webkit-outer-spin-button,
+.mobile-input input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
 
 /* ====== SUBMIT BUTTON ====== */
 .form-fill button {
@@ -958,6 +1028,7 @@ header {
   background: #00796b;
 }
 
+/* ====== RESPONSIVE ====== */
 @media (max-width: 768px) {
   .pop-container {
     width: 90%;
@@ -970,8 +1041,5 @@ header {
     font-size: 14px;
     margin-top: 80px;
     margin-bottom: 5rem;
-  }
-  .popup-container {
-    padding-bottom: 5rem;
   }
 }
