@@ -922,13 +922,11 @@ header {
   padding: 0 12px;
   gap: 8px;
   height: 40px;
-  box-sizing: border-box;
 }
 
 .mobile-input img {
   width: 24px;
   height: 24px;
-  object-fit: cover;
   border-radius: 8%;
 }
 
@@ -942,6 +940,7 @@ header {
 .mobile-input input {
   background: transparent;
   border: none;
+  margin-top: 1.2rem;
   font-size: 15px;
   color: #333;
   height: 100%;
