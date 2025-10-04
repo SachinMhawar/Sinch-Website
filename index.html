@@ -162,7 +162,6 @@
       <section class="ai-section">
         <h2>Transform your operations with the power of AI agents</h2>
         <div class="features">
-          
           <!-- Feature 1 -->
           <div class="feature-card">
             <img
@@ -230,5 +229,48 @@
         </div>
       </div>
     </footer>
+
+    <!-- Button to open popup -->
+    <button class="open-popup-btn" onclick="openPopup()">Contact us</button>
+    <!-- Popup Structure -->
+    <div class="popup-overlay" id="popupOverlay">
+      <div class="pop-container">
+        <button class="close-popup" onclick="closePopup()">✕</button>
+
+        <div class="heading-pop">
+          <h1>Get a <span>live</span> demo</h1>
+          <hr />
+        </div>
+
+        <div class="form-fill">
+          <form name="submit-to-google-sheet">
+            <label for="popup_name">Full Name*</label>
+            <input
+              type="text"
+              id="popup_name"
+              name="Name"
+              required
+              placeholder="Enter your Name"
+            />
+
+            <label for="popup_mob">Mobile Number*</label>
+            <div class="mobile-input">
+              <img src="https://flagcdn.com/w20/in.png" alt="India Flag" />l̥
+              <span>+91</span>
+              <input
+                type="number"
+                id="popup_mob"
+                name="Phone"
+                required
+                placeholder="Enter Mobile Number"
+              />
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
