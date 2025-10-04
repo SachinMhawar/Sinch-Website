@@ -327,6 +327,23 @@ header {
 }
 
 /* Card button */
+.btn-globle {
+  background: #fbbf24;
+  color: #111;
+  font-weight: bold;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #f59e0b;
+}
+
+
+
 .btn {
   background: #fbbf24;
   color: #111;
