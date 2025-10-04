@@ -253,6 +253,7 @@ header {
 }
 
 .btn-globle {
+  display: block;            /* make it block so margin auto works */
   background: #fbbf24;
   color: #111;
   font-weight: bold;
@@ -261,12 +262,13 @@ header {
   border-radius: 25px;
   cursor: pointer;
   transition: background 0.3s ease;
-  margin-left: 42rem;
+  margin: 0 auto 2rem;      /* center horizontally and add bottom space */
 }
 
-.btn:hover {
+.btn-globle:hover {
   background: #f59e0b;
 }
+
 
 /* ===== CARDS GRID ===== */
 .application-section .cards {
@@ -327,23 +329,6 @@ header {
 }
 
 /* Card button */
-.btn-globle {
-  background: #fbbf24;
-  color: #111;
-  font-weight: bold;
-  border: none;
-  padding: 12px 30px;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.btn:hover {
-  background: #f59e0b;
-}
-
-
-
 .btn {
   background: #fbbf24;
   color: #111;
